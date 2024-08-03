@@ -2,10 +2,27 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
 document.addEventListener('DOMContentLoaded', function () {
 
+
+    // ##############################################################
+    // #################### Bootstrap ###############################
+    // ##############################################################
+
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = Array.from(tooltipTriggerList).map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
+
+    const myCarousel = document.querySelector('#carouselExampleCaptions')
+    const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000,
+        ride: 'carousel'
+    })
+
+    // ##############################################################
+    // ##############################################################
+    // ##############################################################
+
+
 
     const mynav = document.getElementById('mynav');
 
