@@ -1,6 +1,47 @@
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
+
+
+    // ##############################################################
+    // #################### Bootstrap ###############################
+    // ##############################################################
+
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    const tooltipList = Array.from(tooltipTriggerList).map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    const myCarousel = document.querySelector('#carouselExampleCaptions')
+    const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000,
+        ride: 'carousel'
+    })
+
+    // ##############################################################
+    // ##############################################################
+    // ##############################################################
+
+
+
+    const mynav = document.getElementById('mynav');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+            mynav.classList.add('bg-info');
+        } else {
+            mynav.classList.remove('bg-info');
+        }
+    });
+
+    mynav.addEventListener('mouseover', function () {
+        mynav.classList.add('bg-info');
+    });
+
+    mynav.addEventListener('mouseout', function () {
+        if (window.scrollY === 0) {
+            mynav.classList.remove('bg-info');
+        }
+    });
+
 });

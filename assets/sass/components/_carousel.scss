@@ -1,0 +1,15 @@
+.carousel-height{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media screen and (max-width:992) {
+ 
+    
+
+    .carousel-height{
+        height: 500px;
+    }
+}
