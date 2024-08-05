@@ -2,89 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- Añadido para CSS de Bootstrap -->
-    <title>ViajesChile2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Añadido para CSS de Bootstrap -->
+  <title>ViajesChile2</title>
 </head>
 
 <body class="bg-dark">
-    <header>
-        <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="dark" id="mynav">
-            <div class="container-fluid container-lg">
-                <div>
-                    <img src="./assets/img/viajes.svg" alt="" style="height: 80px;">
-                    <a href="#" class="text-decoration-none text-white">ViajesChile</a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="abrir/cerrar"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-end me-5" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link active d-none d-md-block" aria-current="page" href="#quienessomos">¿Quiénes somos?</a>
-                        <a class="nav-link active" aria-current="page" href="#destacados">Destacados</a>
-                        <a class="nav-link active" aria-current="page" href="#formulario">Contacto</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div id="carouselExampleCaptions" class="carousel slide container-fluid container-lg">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img/carousel1.jpg" class="d-block w-100 carousel-height" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/carousel2.jpg" class="d-block w-100 carousel-height" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/carousel3.jpg" class="d-block w-100 carousel-height" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <header>
+    <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="dark" id="mynav">
+      <div class="container-fluid container-lg">
+        <div>
+          <img src="./assets/img/viajes.svg" alt="" style="height: 80px;">
+          <a href="#" class="text-decoration-none text-white">ViajesChile</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="abrir/cerrar"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end me-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active d-none d-md-block" aria-current="page" href="#quienessomos">¿Quiénes somos?</a>
+            <a class="nav-link active" aria-current="page" href="#destacados">Destacados</a>
+            <a class="nav-link active" aria-current="page" href="#formulario">Contacto</a>
           </div>
-    </header>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid container-lg">
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/carousel1.jpg" class="d-block w-100 carousel-height" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/carousel2.jpg" class="d-block w-100 carousel-height" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/carousel3.jpg" class="d-block w-100 carousel-height" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <!-- ################################################################################## -->
+    <!-- ################################################################################## -->
+    <section class="container text-white">
+      <h2 class="my-5 text-center titlesection">Quienes somos?</h2>
+      <hr class="text-white">
+      <div class="row my-5">
+        <img src="./assets/img/quienes-somos.jpg" alt="" class="d-none d-lg-block col-6">
+        <div class="col-12 col-lg-6 my-auto">
+          <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Caffeine maximum est. Fumerus porros quando codex.
+            Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
+          <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Caffeine maximum est. Fumerus porros quando codex.
+            Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ################################################################################## -->
+    <!-- ################################################################################## -->
+    <section class="container">
+      <div class="row justify-content-center align-items-center">
+
+        <!-- tarjeta -->
+        <div class="col-12 col-lg-6 row my-3">
+          <img src="./assets/img/card1.jpg" alt="" class="col-12 col-lg-4 p-0">
+          <div class="col-12 col-lg-7 bg-white d-flex flex-column">
+            <h4 class="titleh4">Región de los lagos</h4>
+            <p class="flex-grow-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Caffeine maximum est. Fumerus porros quando codex.
+              Documentatio legere est pro nubs; experimentum et errore maxima est.
+            </p>
+            <hr class="opacity-100">
+            <div class="d-flex justify-content-between">
+              <p class="precio"><i class="fa-solid fa-plane-up"></i> Vuelos desde:</p>
+              <p class="precio"><span>$</span>159.990</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-12 col-lg-6 row my-3">
+          <img src="./assets/img/card2.jpg" alt="" class="col-12 col-lg-4 p-0">
+          <div class="col-12 col-lg-7 bg-white d-flex flex-column">
+            <h4 class="titleh4">Desierto de Atacama</h4>
+            <p class="flex-grow-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Caffeine maximum est. Fumerus porros quando codex.
+              Documentatio legere est pro nubs; experimentum et errore maxima est.
+            </p>
+            <hr class="opacity-100">
+            <div class="d-flex justify-content-between">
+              <p class="precio"><i class="fa-solid fa-plane-up"></i> Vuelos desde:</p>
+              <p class="precio"><span>$</span>159.990</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-12 col-lg-6 row my-3">
+          <img src="./assets/img/card3.jpg" alt="" class="col-12 col-lg-4 p-0">
+          <div class="col-12 col-lg-7 bg-white d-flex flex-column">
+            <h4 class="titleh4">Norte grande de Chile</h4>
+            <p class="flex-grow-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Caffeine maximum est. Fumerus porros quando codex.
+              Documentatio legere est pro nubs; experimentum et errore maxima est.
+            </p>
+            <hr class="opacity-100">
+            <div class="d-flex justify-content-between">
+              <p class="precio"><i class="fa-solid fa-plane-up"></i> Vuelos desde:</p>
+              <p class="precio"><span>$</span>159.990</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-12 col-lg-6 row my-3">
+          <img src="./assets/img/card4.jpg" alt="" class="col-12 col-lg-4 p-0">
+          <div class="col-12 col-lg-7 bg-white d-flex flex-column">
+            <h4 class="titleh4">Bosque Mágico</h4>
+            <p class="flex-grow-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Caffeine maximum est. Fumerus porros quando codex.
+              Documentatio legere est pro nubs; experimentum et errore maxima est.
+            </p>
+            <hr class="opacity-100">
+            <div class="d-flex justify-content-between">
+              <p class="precio"><i class="fa-solid fa-plane-up"></i> Vuelos desde:</p>
+              <p class="precio"><span>$</span>159.990</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ################################################################################## -->
+    <!-- ################################################################################## -->
+    <section class="container">
+      <h2 class="titlesection text-white text-center my-5">Testimonios</h2>
+      <hr class="text-white">
+      <div class="row my-5">
+        <div class="col-12 col-lg-4">
+          <div class="testimonio">
+            <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Caffeine maximum est. Fumerus porros quando codex.
+            Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
+            <div class="testimonio__photo">
+              <img src="./assets/img/testimonio1.jpg" alt="">
+            </div>
+            <h5 class="testimonio__name">Mariela</h5>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="testimonio">
+            <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Caffeine maximum est. Fumerus porros quando codex.
+            Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
+            <div class="testimonio__photo">
+              <img src="./assets/img/testimonio2.jpg" alt="">
+            </div>
+            <h5 class="testimonio__name">Christian</h5>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="testimonio">
+            <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Caffeine maximum est. Fumerus porros quando codex.
+            Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
+            <div class="testimonio__photo">
+              <img src="./assets/img/testimonio3.jpg" alt="">
+            </div>
+            <h5 class="testimonio__name">Fernanda</h5>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
 
 
 
 
-
-    <!-- <div class="p-5">
+  <!-- <div class="p-5">
         <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-title="Tooltip on top">
             Tooltip on top
         </button>
     </div> -->
 
-    <script type="module" src="/assets/js/script.js"></script> <!-- Cambiado a type="module" -->
+  <script type="module" src="/assets/js/script.js"></script> <!-- Cambiado a type="module" -->
 </body>
 
 </html>
