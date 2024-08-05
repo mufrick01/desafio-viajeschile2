@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/viajes.svg" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Añadido para CSS de Bootstrap -->
   <title>ViajesChile2</title>
 </head>
 
@@ -15,7 +14,7 @@
     <nav class="fixed-top navbar navbar-expand-lg" data-bs-theme="dark" id="mynav">
       <div class="container-fluid container-lg">
         <div>
-          <img src="./assets/img/viajes.svg" alt="" style="height: 80px;">
+          <img src="./assets/img/viajes.svg" alt="" style="height: 50px;">
           <a href="#" class="text-decoration-none text-white">ViajesChile</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -84,10 +83,10 @@
   <main>
     <!-- ################################################################################## -->
     <!-- ################################################################################## -->
-    <section class="container text-white">
-      <h2 class="my-5 text-center titlesection">Quienes somos?</h2>
-      <hr class="text-white">
-      <div class="row my-5">
+    <section class="container my-5">
+      <h2 class="text-center text-white titlesection">Quienes somos?</h2>
+      <hr class="text-white opacity-100">
+      <div class="row my-5 text-white">
         <img src="./assets/img/quienes-somos.jpg" alt="" class="d-none d-lg-block col-6">
         <div class="col-12 col-lg-6 my-auto">
           <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -101,7 +100,9 @@
     </section>
     <!-- ################################################################################## -->
     <!-- ################################################################################## -->
-    <section class="container">
+    <section class="container my-5">
+      <h2 class="text-center text-white titlesection">Destacados</h2>
+      <hr class="text-white opacity-100">
       <div class="row justify-content-center align-items-center">
 
         <!-- tarjeta -->
@@ -172,18 +173,16 @@
     </section>
     <!-- ################################################################################## -->
     <!-- ################################################################################## -->
-    <section class="container">
-      <h2 class="titlesection text-white text-center my-5">Testimonios</h2>
-      <hr class="text-white">
-      <div class="row my-5">
+    <section class="container my-5">
+      <h2 class="titlesection text-white text-center">Testimonios</h2>
+      <hr class="text-white opacity-100">
+      <div class="row my-1">
         <div class="col-12 col-lg-4">
           <div class="testimonio">
             <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Caffeine maximum est. Fumerus porros quando codex.
             Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
-            <div class="testimonio__photo">
-              <img src="./assets/img/testimonio1.jpg" alt="">
-            </div>
+            <img class="testimonio__photo" src="./assets/img/testimonio1.jpg" alt="">
             <h5 class="testimonio__name">Mariela</h5>
           </div>
         </div>
@@ -192,9 +191,7 @@
             <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Caffeine maximum est. Fumerus porros quando codex.
             Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
-            <div class="testimonio__photo">
-              <img src="./assets/img/testimonio2.jpg" alt="">
-            </div>
+            <img class="testimonio__photo" src="./assets/img/testimonio2.jpg" alt="">
             <h5 class="testimonio__name">Christian</h5>
           </div>
         </div>
@@ -203,26 +200,26 @@
             <p class="testimonio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Caffeine maximum est. Fumerus porros quando codex.
             Documentatio legere est pro nubs; experimentum et errore maxima est.</p>
-            <div class="testimonio__photo">
-              <img src="./assets/img/testimonio3.jpg" alt="">
-            </div>
+              <img class="testimonio__photo" src="./assets/img/testimonio3.jpg" alt="">
             <h5 class="testimonio__name">Fernanda</h5>
           </div>
         </div>
       </div>
       
     </section>
+    <!-- ################################################################################## -->
+    <!-- ################################################################################## -->
+
+    <section class="container my-5">
+      <h2 class="text-white text-center titlesection">Contacto</h2>
+      <hr class="text-white opacity-100">
+      <div class="row text-white">
+        <div class="col-12 col-lg-6">formulario</div>
+        <div class="col-12 col-lg-6">datos</div>
+      </div>
+    </section>
+
   </main>
-
-
-
-
-  <!-- <div class="p-5">
-        <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-            data-bs-title="Tooltip on top">
-            Tooltip on top
-        </button>
-    </div> -->
 
   <script type="module" src="/assets/js/script.js"></script> <!-- Cambiado a type="module" -->
 </body>
